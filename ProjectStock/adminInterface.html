@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Pizza Bar</title>
+    <link rel="stylesheet" href="adminDecorete.css">
+</head>
+<body>
+    <div id="container">
+        <h1>ระบบจัดการ Stock Pizza</h1>
+        <div class="MenuBar">
+            <table>
+                <tr>
+                    <td>เลือกเมนู:</td>
+                    <td>
+                        <select id="menu">
+                            <option disabled selected>------ เลือก ------</option>
+                            <option value="add">เพิ่มวัตถุดิบ</option>
+                            <option value="edit">แก้ไขข้อมูล</option>
+                            <option value="view">ดูของในสต๊อก</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button onclick="checkSelect()">ตกลง</button>
+                        <button onclick="clearInput()">ยกเลิก</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <div id="addContainer" style="display: none;">
+        <h1>เติมของ</h1>
+        <div class="addBar">
+            <table>
+                <tr>
+                    <td>วัตถุดิบ : </td>
+                    <td>
+                        <input type="text" id="nameIngredient" placeholder="ใส่ชื่อวัตถุดิบ เช่น เห็ด" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>จำนวน</td>
+                    <td>
+                        <input type="number" id="numberIngredient" placeholder="ใส่จำนวนวัตถุดิบ" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button onclick="addIngredient()">เพิ่มวัตถุดิบ</button>
+                        <button onclick="back()">ยกเลิก</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <script src="adminAction.js"></script>
+</body>
+</html>
