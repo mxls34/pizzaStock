@@ -49,9 +49,9 @@ function checkSelect() {
             htmlEdit += `<td>${Stock[i].ID}</td>`;
             htmlEdit += `<td>${Stock[i].name}</td>`;
             htmlEdit += `<td>${Stock[i].number}</td>`;
-            htmlEdit += `<td>${Stock[i].day}</td>`;
+            htmlEdit += `<td style='padding: 0.5rem;'>${Stock[i].day}</td>`;
 
-            htmlEdit += `<td>
+            htmlEdit += `<td style='padding: 0.5rem;'>
                             <button class="editBtn1" onclick="">แก้ไข</button>                       
                             <button class="editBtn2" onclick="">ลบ</button>                       
                         </td>`
