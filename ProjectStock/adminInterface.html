@@ -16,9 +16,9 @@
                     <td>
                         <select id="menu">
                             <option disabled selected>------ เลือก ------</option>
+                            <option value="view">ดูของในสต๊อก</option>
                             <option value="add">เพิ่มวัตถุดิบ</option>
                             <option value="edit">แก้ไขข้อมูล</option>
-                            <option value="view">ดูของในสต๊อก</option>
                         </select>
                     </td>
                 </tr>
@@ -50,8 +50,33 @@
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <button onclick="addIngredient()">เพิ่มวัตถุดิบ</button>
+                        <button onclick="addStock()">เพิ่มวัตถุดิบ</button>
                         <button onclick="back()">ยกเลิก</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="editContainer" style="display: none;">
+        <h1>แก้ไขข้อมูลวัตถุดิบ</h1>
+        <div class="editBar">
+            <table border="1">
+                <thead>
+                    <td align="center" style="background-color: rgb(178, 120, 231);">ID วัตถุดิบ</td>
+                    <td align="center" style="background-color: rgb(178, 120, 231);">ชื่อวัตถุดิบ</td>
+                    <td align="center" style="background-color: rgb(178, 120, 231);">จำนวน</td>
+                    <td align="center" style="background-color: rgb(178, 120, 231);">วันที่เพิ่ม</td>
+                    <td style="background-color: bisque;">      </td>
+                </thead>
+
+                <tbody id="showEdit">
+                    
+                </tbody>
+
+                <tr>
+                    <td colspan="5">
+                        <button onclick="back()">กลับ</button>
                     </td>
                 </tr>
             </table>

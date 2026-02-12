@@ -1,19 +1,13 @@
 body {
     display: flex;
     justify-content: center;
-
-    padding: 15rem;
 }
 
-tr{
+tr {
     height: 3rem;
 }
 
-td{
-    width: 6rem;
-}
-
-input{
+input {
     height: 2rem;
     margin-left: 0.2rem;
     margin-right: 0.2rem;
@@ -25,13 +19,11 @@ input{
 #container {
     /* border: solid black 2px; */
     border-radius: 9px 9px 9px 9px;
-    /* margin-top: 20rem;
-    margin-left: 40rem;
-    margin-right: 40rem; */
+    margin: 15rem;
     height: 20rem;
     width: 30rem;
     box-shadow: 5px 5px 50px 5px;
-    
+
 
     text-align: center;
     justify-content: center;
@@ -54,8 +46,9 @@ select {
     justify-content: center;
 }
 
-#addContainer{
+#addContainer {
     /* border: solid black 2px; */
+    margin: 15rem;
     border-radius: 9px 9px 9px 9px;
     box-shadow: 5px 5px 50px 5px;
 
@@ -64,7 +57,33 @@ select {
     text-align: center;
 }
 
-.addBar{
+.addBar {
     display: flex;
     justify-content: center;
+}
+
+#editContainer {
+    border: solid black 1px;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 5px 5px 50px 5px;
+
+    text-align: center;
+    width: 70rem;
+    padding: 1rem;
+}
+
+.editBar {
+    /* border: solid black 1px; */
+    display: flex;
+    justify-content: center;
+}
+
+.editBtn1, .editBtn2{
+    border: solid black 1px;
+    border-radius: 9px 9px 9px 9px;
+}
+
+.editBtn1:hover,
+.editBtn2:hover {
+    background: linear-gradient(to left, #aa91ee, #91d0ee)
 }
