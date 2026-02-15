@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍕</text></svg>">
+    <link rel="stylesheet" href="index.css">
+    <title>Pizza Stock</title>
+</head>
+<body>
+    <div class="container">
+        <div class="iconTitle">
+            <h1>🍕 Stock Pizza</h1>
+        </div>
+        <div class="labelHead">
+            <h1 class="headWord">Stock Pizza</h1>
+        </div>
+        <div class="taskBar">
+
+            <input type="text" id="categoryName" placeholder="🔍 พิมพ์ชื่อวัตถุดิบ หรือ ID" required>
+
+            <select id="categoryType">
+                <option disabled selected>เลือกประเภท</option>
+                <option value="processed">อาหารแปรรูป ex.แฮม</option>
+                <option value="sea">ทะเล</option>
+                <option value="vegetable">ผัก</option>
+                <option value="sauce">ซอส</option>
+            </select>
+
+            <select id="status">
+                <option disabled selected>เลือกสถานะ</option>
+                <option value="all">ทั้งหมด</option>
+                <option value="normal">ปกติ</option>
+                <option value="low">เหลือน้อย</option>
+                <option value="out">หมด</option>
+            </select>
+
+            <button class="findBtn" onclick="findCategory()">ค้นหา</button>
+        </div>
+
+        <div class="showTable">
+            <table border="1" width="1000">
+                <thead>
+                    <td>ID วัตถุดิบ</td>
+                    <td>ชื่อวัตถุดิบ</td>
+                    <td>จำนวนคงเหลือ</td>
+                    <td>ประเภท</td>
+                    <td>สถานะ</td>
+                    <td></td>
+                </thead>
+                <tbody id="showBody">
+                    
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

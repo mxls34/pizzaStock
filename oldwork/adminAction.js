@@ -36,10 +36,14 @@ function checkSelect() {
     // console.log(typeSelect);
 
     if (typeSelect == "add") {
+        document.getElementById('titleID').innerHTML = "เพิ่มวัตถุดิบ";
+        
         document.getElementById('container').style.display = "none";
         document.getElementById('addContainer').style.display = "block";
-
+        
     } else if (typeSelect == "edit") {
+        document.getElementById('titleID').innerHTML = "แก้ไขข้อมูลวัตถุดิบ";
+
         document.getElementById('container').style.display = "none";
         document.getElementById('editContainer').style.display = "block";
 
